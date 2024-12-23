@@ -3,12 +3,11 @@ import { useEffect, useState, Suspense } from "react";
 import Link from "next/link";
 import { useRouter } from 'next/router';
 
-// Componente de Loading
+
 function Loading() {
   return <div className="text-center text-lg text-gray-600">Loading...</div>;
 }
 
-// Componente Vehicles
 export function Vehicles() {
   const [vehicles, setVehicles] = useState([]); 
   const [selectedMake, setSelectedMake] = useState(""); 
